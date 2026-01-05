@@ -1,0 +1,56 @@
+/* styles.css */
+.header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* whiteAlpha.900 equivalent */
+  z-index: 1000;
+  padding: 12px; /* Chakra's spacing scale 3 = 12px */
+  transition: transform 0.3s ease-in-out;
+  padding-left: 10%;
+  padding-right: 15%;
+  margin-top: 2%;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 8px 14px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+}
+
+.nav-btn:hover {
+  text-decoration: underline;
+}
+
+/* Login button */
+.login-btn {
+  background-color: #f4ce14;
+  border-radius: 15px; /* pill shape */
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+}
+
+.login-btn:hover {
+  background-color: #495E57;
+  color: #ffffff;
+}
+
+.hero-section {
+   background: linear-gradient(
+    to bottom,
+    #495E57 90%,
+    #ffffff 10%
+  );
+  padding: 5px;
+  height: 90vh;
+}
