@@ -1,9 +1,17 @@
 import './App.css';
+import NavigationBar from './NavigationBar';
+import HeroSection from './HeroSection';
+import OrderOnlineSection from './OrderOnlineSection';
+import AboutUs from './AboutUs';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <>
+      <NavigationBar />
+      <HeroSection />
+      <OrderOnlineSection />
+      <AboutUs/>
+    </>
   );
 }
 
