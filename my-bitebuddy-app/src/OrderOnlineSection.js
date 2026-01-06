@@ -33,7 +33,7 @@ export default function OrderOnlineSection() {
   ];
 
   return (
-    <section className="order-section">
+    <section className="order-section" id="order-section">
       <div className="order-header">
         <h2>This week specials!</h2>
         <button className="online-menu-btn">Online menu</button>
