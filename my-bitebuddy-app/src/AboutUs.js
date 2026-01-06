@@ -5,7 +5,7 @@ import RestaurantImage from "./assets/LittleLemonRestaurant.png";
 export default function AboutUs() {
   return (
     <div className="about-us">
-      <section className="about-section">
+      <section className="about-section" id="about-section">
         <div className="about-text">
           <h2 className="about-title">Little Lemon</h2>
           <h3 className="about-subtitle">Chicago</h3>

@@ -25,14 +25,14 @@ export default function NavigationBar() {
         <Spacer />
         {/* Right side: Navigation Links */}
         <HStack spacing={5}>
-          <Link href="/" className="nav-btn">
+          <Link href="#hero-section" className="nav-btn">
             Home
           </Link>
-          <Link href="/about" className="nav-btn">
-            About Us
-          </Link>
-          <Link href="/menu" className="nav-btn">
+          <Link href="#order-section" className="nav-btn">
             Menu
+          </Link>
+          <Link href="#about-section" className="nav-btn">
+            About Us
           </Link>
           <Link href="/login" className="login-btn">
             Login
