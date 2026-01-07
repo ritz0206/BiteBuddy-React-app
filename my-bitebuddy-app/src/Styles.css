@@ -1,13 +1,13 @@
 /* styles.css */
 .header {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9); /* whiteAlpha.900 equivalent */
+  background-color: #E2E2E2; /* whiteAlpha.900 equivalent */
   z-index: 1000;
   padding: 12px; /* Chakra's spacing scale 3 = 12px */
   transition: transform 0.3s ease-in-out;
   padding-left: 10%;
   padding-right: 15%;
-  margin-top: 2%;
+  margin-top: 0;
 }
 
 .nav-btn {

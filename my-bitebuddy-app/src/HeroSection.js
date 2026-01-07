@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
+import { Link } from "react-router-dom";
 import sampleImage from "./assets/HeroSectionImg.png"; // Replace with your actual image
 
 export default function HeroSection() {
@@ -14,9 +15,9 @@ export default function HeroSection() {
               We are a family owned Mediterranean restaurant, focused on traditional
               recipes served with a modern twist
             </p>
-            <a href="#reserve" className="reserve-button">
+            <Link to="/reserve" className="reserve-button">
               Reserve A Table
-            </a>
+            </Link>
           </div>
           {/* Right Image Column */}
           <div className="hero-image-container">

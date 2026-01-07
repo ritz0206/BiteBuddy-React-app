@@ -1,0 +1,75 @@
+.reserve-container {
+  background-color: #EDEFEE;
+  border-radius: 8px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Keeps the form responsive */
+  margin: 20px auto; /* Added margin for spacing */
+}
+
+/* Title styling */
+.reserve-container h1 {
+  text-align: center;
+  color: white;
+  background-color: #495E57; /* Background color for the title */
+  padding: 10px 0;
+  border-radius: 6px;
+  margin: -20px -30px 20px -30px; /* Making sure the background extends to the form edges */
+}
+
+/* Form styles */
+.reserve-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form group styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+.form-group label {
+  color: var(--main-color);
+  margin-bottom: 5px;
+}
+
+.required {
+  color: red;
+}
+
+/* Input styling */
+.form-group input {
+    padding: 10px;
+    border: 1px solid #939391;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group select {
+    padding: 10px;
+    border: 1px solid #939391;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+/* Submit button styling */
+.submit-button {
+  background-color: #f4ce14;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #495E57; /* Slightly darker yellow */
+}
