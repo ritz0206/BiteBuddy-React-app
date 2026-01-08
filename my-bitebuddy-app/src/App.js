@@ -6,6 +6,7 @@ import OrderOnlineSection from './OrderOnlineSection';
 import AboutUs from './AboutUs';
 import Footer from './Footer';
 import Reserve from './Reserve';
+import Confirmation from './Confirmation';
 import React, { useState } from 'react';
 
 const fetchAPI = async (date) => {
@@ -64,6 +65,7 @@ function App() {
           }
         />
         <Route path="/reserve" element={<Reserve formDataTime={formDataTime} handleFormDataTimeChange={handleFormDataTimeChange} />} />
+        <Route path="/confirmation" element={<Confirmation/>} />
       </Routes>
       <Footer />
     </Router>
