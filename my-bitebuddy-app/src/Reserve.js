@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Reserve.css';
+import { useNavigate } from 'react-router-dom';
 
 const Reserve = ({ formDataTime, handleFormDataTimeChange }) => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ const Reserve = ({ formDataTime, handleFormDataTimeChange }) => {
     occasion: ''
   });
 
+  const navigate = useNavigate();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -23,7 +25,9 @@ const Reserve = ({ formDataTime, handleFormDataTimeChange }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Reservation details:", formData);
+    console.log("Reservation details:", formDataTime);
     alert("Reservation request is sent!");
+    navigate('/confirmation', { state: { date: formData.date, time: formData.time } });
     setFormData({
       name: '',
       email: '',
@@ -103,7 +107,7 @@ const Reserve = ({ formDataTime, handleFormDataTimeChange }) => {
                     {time}
                   </option>
                 ))
-                : <option value="">Select times</option>
+                : <option value="">Select a time</option>
             }
 
           </select>
